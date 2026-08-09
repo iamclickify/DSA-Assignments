@@ -1,4 +1,3 @@
-/*
 #include <iostream>
 using namespace std;
 
@@ -46,43 +45,3 @@ int main(){
 
     return 0;
 }
-*/
-#include <iostream>
-using namespace std;
-int main(){
-   float temperature[3][7];
-   string city[3];
-
-   for(int i=0; i<3; i++){
-       cout<<"Enter City "<<i+1<<": "<<endl;
-       cin>>city[i];
-   }
-   for(int i=0; i<3; i++){
-       cout<<"Enter temperature (in degree celsius)  for "<<city[i]<<endl;
-       for(int j=0; j<7; j++){
-           cout<<"Day "<<j+1<<": "<<endl;
-           cin>>temperature[i][j];
-       }
-   }
-
-   cout << "City\t\tD1\tD2\tD3\tD4\tD5\tD6\tD7\tWeekly Average\n";
-   for(int i = 0; i<3; i++) {
-       float sum = 0;
-       cout<<city[i]<<"\t\t";
-       for(int j = 0; j<7; j++) {
-           cout<<temperature[i][j]<<"\t";
-           sum += temperature[i][j];
-       }
-       cout<<sum / 7 <<endl;
-   }
-   cout<<"Daily average \t";
-   for(int j = 0; j<7; j++){
-	   float sum = 0;
-       for(int i = 0; i<3; i++){
-           sum += temperature[i][j];
-       }
-       cout<<sum / 3<<"\t";
-   }
-   return 0;
-}
-
