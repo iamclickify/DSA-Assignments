@@ -37,21 +37,21 @@ int main() {
     cout << "City\t\tM1\tM2\tM3\tM4\tAverage\n";
     cout << "-------------------------------------------------------------\n";
 
-    for(int i = 0; i < 3; i++) {
+    for(int i = 0; i<3; i++) {
 
         float sum = 0;
 
-        cout << city[i] << "\t\t";
+        cout<<city[i]<<"\t\t";
 
-        for(int j = 0; j < 4; j++) {
-            cout << rainfall[i][j] << "\t";
+        for(int j = 0; j<4; j++) {
+            cout<<rainfall[i][j]<<"\t";
             sum += rainfall[i][j];
         }
 
-        cout << sum / 4 << endl;
+        cout<<sum / 4 <<endl;
     }
 
-    cout << "-------------------------------------------------------------\n";
+    cout<<"-------------------------------------------------------------\n";
 
     return 0;
 }
