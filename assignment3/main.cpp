@@ -64,7 +64,7 @@ void sequential_chaining(int table[slots][servers],int request,int server){
         }
     }
 
-    cout<<"No empty slot available in Server "<<server<<"!"<<endl;
+    cout<<"No empty slot available in Server "<<server<<endl;
 }
 
 int main(){
